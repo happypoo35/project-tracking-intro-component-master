@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+
+$Very-Dark-Blue: hsl(230, 29%, 20%);
+$Dark-Grayish-Blue: hsl(230, 11%, 40%);
+$Grayish-Blue: hsl(231, 7%, 65%);
+$Light-Grayish-Blue: hsl(207, 33%, 95%);
+$Soft-Red: #ff5d5e;
+
+%transition {
+  transition: 0.3s ease;
+}
+
+$tablet: 840px;
+$mobile: 560px;
+
+@mixin tablet {
+  @media screen and(max-width: $tablet) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and(max-width: $mobile) {
+    @content;
+  }
+}
